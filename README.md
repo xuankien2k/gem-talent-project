@@ -2,6 +2,10 @@
 
 Một component input number với các tính năng validation và UI đẹp mắt sử dụng React và TailwindCSS.
 
+**Repository:** [https://github.com/xuankien2k/gem-talent-project](https://github.com/xuankien2k/gem-talent-project)
+
+**Live Demo:** [GitHub Pages](https://xuankien2k.github.io/gem-talent-project/) (sau khi deploy)
+
 ## Tính năng
 
 ### Unit Selection
@@ -62,25 +66,20 @@ src/
 
 ## Deployment
 
-### GitHub Pages
+### GitHub Pages (Đã cấu hình sẵn)
 
-1. Cài đặt `gh-pages`:
+Repository đã được cấu hình với GitHub Actions để tự động deploy lên GitHub Pages.
+
+1. Push code lên repository:
 ```bash
-npm install --save-dev gh-pages
+git push -u origin main
 ```
 
-2. Thêm script vào `package.json`:
-```json
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-}
-```
+2. Vào Settings > Pages trong GitHub repository
+3. Chọn Source: "GitHub Actions"
+4. Code sẽ tự động build và deploy khi push lên branch `main`
 
-3. Deploy:
-```bash
-npm run deploy
-```
+**Lưu ý:** Base path đã được cấu hình là `/gem-talent-project/` trong `vite.config.js`
 
 ### Netlify
 
