@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  prefix: 'gem-',
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
