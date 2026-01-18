@@ -165,7 +165,7 @@ const NumberInput = () => {
   }, [])
 
   return (
-    <div className="gem-p-8 gem-bg-[#1a1a1a] gem-min-h-screen">
+    <div className="gem-p-8 gem-bg-[#303030] gem-min-h-screen">
       <div className="gem-max-w-md gem-mx-auto gem-space-y-6">
         {/* Unit Selector */}
         <div className="gem-flex gem-items-center gem-gap-4">
