@@ -165,11 +165,11 @@ const NumberInput = () => {
   }, [])
 
   return (
-    <div className="gem-p-8 gem-bg-[#303030] gem-min-h-screen">
-      <div className="gem-max-w-md gem-mx-auto gem-space-y-6">
+    <div className="gem-flex gem-justify-center gem-items-center gem-h-screen gem-w-full">
+      <div className="gem-max-w-md gem-w-fit gem-h-fit gem-p-4 gem-rounded-[6px] gem-bg-[#303030] gem-mx-auto gem-space-y-6">
         {/* Unit Selector */}
         <div className="gem-flex gem-items-center gem-gap-4">
-          <label className="gem-text-gray-300 gem-text-sm gem-font-medium gem-w-16">Unit</label>
+          <label className="gem-text-gray-300 gem-text-sm gem-font-default gem-w-16 gem-text-left">Unit</label>
           <div className="gem-flex gem-w-[140px] gem-h-[36px] gem-gap-[2px] gem-rounded-[6px] gem-bg-[#212121] gem-p-[2px]">
             <button
               onClick={() => handleUnitChange('%')}
@@ -196,7 +196,7 @@ const NumberInput = () => {
 
         {/* Value Stepper */}
         <div className="gem-flex gem-items-center gem-gap-4">
-          <label className="gem-text-gray-300 gem-text-sm gem-font-medium gem-w-16">Value</label>
+          <label className="gem-text-gray-300 gem-text-sm gem-font-default gem-w-16 gem-text-left">Value</label>
           <div className="gem-relative">
             <div className="gem-flex gem-items-center gem-w-[140px] gem-h-[36px] gem-rounded-[6px] gem-bg-[#212121]">
               {/* Decrement Button */}
@@ -212,7 +212,7 @@ const NumberInput = () => {
                       : 'gem-border gem-border-transparent gem-border-r-0'
                   } ${
                     isDecrementDisabled
-                      ? 'gem-cursor-default gem-bg-[#212121] gem-text-[#AAAAAA]'
+                      ? 'gem-cursor-not-allowed gem-bg-[#212121] gem-text-[#AAAAAA]'
                       : hoveredButton === 'decrement' || (hoveredInput && !isFocused)
                       ? 'gem-bg-[#424242] gem-text-[#F9F9F9]'
                       : 'gem-bg-[#212121] gem-hover:bg-[#424242] gem-text-[#F9F9F9]'
@@ -265,7 +265,7 @@ const NumberInput = () => {
                       : 'gem-border gem-border-transparent gem-border-l-0'
                   } ${
                     isIncrementDisabled
-                      ? 'gem-cursor-default gem-bg-[#212121] gem-text-[#AAAAAA]'
+                      ? 'gem-cursor-not-allowed gem-bg-[#212121] gem-text-[#AAAAAA]'
                       : hoveredButton === 'increment' || (hoveredInput && !isFocused)
                       ? 'gem-bg-[#424242] gem-text-[#F9F9F9]'
                       : 'gem-bg-[#212121] gem-hover:bg-[#424242] gem-text-[#F9F9F9]'
