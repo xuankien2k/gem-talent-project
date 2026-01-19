@@ -169,11 +169,11 @@ const NumberInput = () => {
       <div className="gem-max-w-md gem-w-fit gem-h-fit gem-p-4 gem-rounded-[6px] gem-bg-[#303030] gem-mx-auto gem-space-y-6">
         {/* Unit Selector */}
         <div className="gem-flex gem-items-center gem-gap-4">
-          <label className="gem-text-gray-300 gem-text-sm gem-font-default gem-w-16 gem-text-left">Unit</label>
+          <label className="gem-text-gray-300 gem-text-[12px] gem-font-default gem-w-16 gem-text-left">Unit</label>
           <div className="gem-flex gem-w-[140px] gem-h-[36px] gem-gap-[2px] gem-rounded-[6px] gem-bg-[#212121] gem-p-[2px]">
             <button
               onClick={() => handleUnitChange('%')}
-              className={`gem-w-[67px] gem-h-[32px] gem-rounded-[6px] gem-text-sm gem-font-medium gem-transition-colors ${
+              className={`gem-w-[67px] gem-h-[32px] gem-rounded-[6px] gem-text-[12px] gem-font-medium gem-transition-colors ${
                 unit === '%'
                   ? 'gem-bg-[#424242] gem-text-[#F9F9F9]'
                   : 'gem-bg-[#212121] gem-text-[#AAAAAA]'
@@ -183,7 +183,7 @@ const NumberInput = () => {
             </button>
             <button
               onClick={() => handleUnitChange('px')}
-              className={`gem-w-[67px] gem-h-[32px] gem-rounded-[6px] gem-text-sm gem-font-medium gem-transition-colors ${
+              className={`gem-w-[67px] gem-h-[32px] gem-rounded-[6px] gem-text-[12px] gem-font-medium gem-transition-colors ${
                 unit === 'px'
                   ? 'gem-bg-[#424242] gem-text-[#F9F9F9]'
                   : 'gem-bg-[#212121] gem-text-[#AAAAAA]'
@@ -196,7 +196,7 @@ const NumberInput = () => {
 
         {/* Value Stepper */}
         <div className="gem-flex gem-items-center gem-gap-4">
-          <label className="gem-text-gray-300 gem-text-sm gem-font-default gem-w-16 gem-text-left">Value</label>
+          <label className="gem-text-gray-300 gem-text-[12px] gem-font-default gem-w-16 gem-text-left">Value</label>
           <div className="gem-relative">
             <div className="gem-flex gem-items-center gem-w-[140px] gem-h-[36px] gem-rounded-[6px] gem-bg-[#212121]">
               {/* Decrement Button */}
@@ -239,7 +239,7 @@ const NumberInput = () => {
                 onBlur={handleInputBlur}
                 onMouseEnter={() => setHoveredInput(true)}
                 onMouseLeave={() => setHoveredInput(false)}
-                className={`gem-flex-1 gem-w-[68px] gem-h-[36px] gem-text-center gem-border-x-0 gem-outline-none gem-text-sm gem-font-normal gem-transition-all gem-text-[#F9F9F9] ${
+                className={`gem-flex-1 gem-w-[68px] gem-h-[36px] gem-text-center gem-border-x-0 gem-outline-none gem-text-[12px] gem-font-normal gem-transition-all gem-text-[#F9F9F9] ${
                   isFocused
                     ? 'gem-border-y gem-border-[#3C67FF] gem-border-x-0 gem-bg-[#212121]'
                     : 'gem-border gem-border-x-0 gem-border-transparent'
